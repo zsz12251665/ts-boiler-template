@@ -1,4 +1,4 @@
-class People {
+export class People {
 	name: string;
 
 	constructor(name: string);
@@ -7,6 +7,3 @@ class People {
 		this.name = args.join(' ');
 	}
 }
-
-const john = new People('John Wick');
-console.log(john.name);
