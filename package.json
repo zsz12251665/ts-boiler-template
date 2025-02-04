@@ -1,15 +1,15 @@
 {
+	"private": true,
 	"name": "ts-boiler-template",
-	"version": "1.0.0",
 	"description": "A boiler template repository in TypeScript",
 	"main": "src/index.ts",
 	"scripts": {
 		"build": "tsc --build",
 		"test": "tsc --noEmit",
-		"lint": "eslint . --ext .ts --ignore-path .gitignore",
-		"lint:fix": "eslint . --ext .ts --ignore-path .gitignore --fix",
-		"format": "prettier --check . --ignore-path .gitignore",
-		"format:fix": "prettier --write . --ignore-path .gitignore"
+		"lint": "eslint .",
+		"lint:fix": "eslint --fix .",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write ."
 	},
 	"author": "zsz12251665",
 	"license": "MIT",
@@ -18,11 +18,13 @@
 	},
 	"homepage": "https://github.com/zsz12251665/ts-boiler-template#readme",
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.58.0",
-		"@typescript-eslint/parser": "^5.58.0",
-		"eslint": "^8.38.0",
-		"eslint-config-prettier": "^8.8.0",
-		"prettier": "^2.8.7",
-		"typescript": "^5.0.4"
+		"@eslint/compat": "^1.2.6",
+		"@eslint/js": "^9.19.0",
+		"eslint": "^9.19.0",
+		"eslint-config-prettier": "^10.0.1",
+		"globals": "^15.14.0",
+		"prettier": "^3.4.2",
+		"typescript": "^5.7.3",
+		"typescript-eslint": "^8.23.0"
 	}
 }
